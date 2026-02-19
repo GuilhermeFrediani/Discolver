@@ -33,6 +33,7 @@
 /* estilização do body, definindo a imagem de fundo e suas propriedades */
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 
@@ -201,3 +202,14 @@ footer {
   font-size: 14px;
 }
 
+
+/* media query para telas maiores, alterando a imagem de fundo para a versão desktop */
+@media (min-width: 700px) {
+   :root {
+    --bg-url: url(./assets/bg-desktop.jpg)
+   }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+   }
+}
